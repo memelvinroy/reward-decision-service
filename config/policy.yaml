@@ -1,0 +1,25 @@
+policy_version: v1
+
+reward_type_weights:
+  XP: 1.0
+  CHECKOUT: 0.0
+  GOLD: 0.0
+
+xp_per_rupee: 2
+max_xp_per_txn: 500
+
+persona_multipliers:
+  NEW: 1.5
+  RETURNING: 1.0
+  POWER: 2.0
+
+daily_cac_cap:
+  NEW: 500
+  RETURNING: 100
+  POWER: 300
+
+feature_flags:
+  prefer_xp_mode: true
+  cooldown_minutes: 30
+
+idempotency_ttl_seconds: 5
