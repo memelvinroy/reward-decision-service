@@ -8,9 +8,10 @@ from app.services.reward_service import RewardService
 
 @pytest.mark.asyncio
 async def test_daily_cac_cap_enforced():
-    cache = MemoryCache()
+    cache = MemoryCache() 
     config = PolicyConfig("config/policy.yaml")
-
+    #In-memory cache
+    #Loads policy configuration
     # Increase cap temporarily for predictable test
     config.daily_cac_cap["NEW"] = 500
 

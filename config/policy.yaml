@@ -22,4 +22,4 @@ feature_flags:
   prefer_xp_mode: true
   cooldown_minutes: 30
 
-idempotency_ttl_seconds: 5
+idempotency_ttl_seconds: 86400
